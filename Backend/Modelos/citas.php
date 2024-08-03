@@ -10,7 +10,7 @@ class Citas
         $this->conexion = $conexion;
     }
     //Metodos
-    public function consulta()
+    public function consultar()
     {
         $con = "SELECT * FROM citas ORDER BY fecha";
         $res = mysqli_query($this->conexion, $con);

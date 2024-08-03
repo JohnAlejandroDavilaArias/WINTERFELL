@@ -10,8 +10,8 @@ $control = $_GET['control'];
 $citas = new Citas($conexion);
 
 switch ($control) {
-    case 'consulta':
-        $vec = $citas->consulta();
+    case 'consultar':
+        $vec = $citas->consultar();
         break;
 
     case 'insertar':

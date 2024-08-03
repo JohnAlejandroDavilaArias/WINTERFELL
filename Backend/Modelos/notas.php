@@ -12,7 +12,7 @@ class Notas
     //Metodos
     public function consulta()
     {
-        $con = "SELECT * FROM notas ORDER BY fecha";
+        $con = "SELECT * FROM notas ORDER BY id_nota";
         $res = mysqli_query($this->conexion, $con);
         $vec = [];
 
