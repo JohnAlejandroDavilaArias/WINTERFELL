@@ -16,8 +16,8 @@ switch ($control) {
 
     case 'insertar':
         //
-        $json = '{"fecha":"1998-06-11","hora":"06:00:00"}';
-        //$json = file_get_contents('php://input');
+        //$json = '{"fecha":"1998-06-11","hora":"06:00:00"}';
+        $json = file_get_contents('php://input');
         $params = json_decode($json);
         $vec = $notas->insertar($params);
         break;
